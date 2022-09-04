@@ -1,9 +1,10 @@
 from datetime import date
 from django.db import models
 
-class Familiar(models.Model):
+class Bonos(models.Model):
     nombre=models.CharField(max_length=50)
-    apellido=models.CharField(max_length=50)
-    edad=models.IntegerField(max_length=100)
-    fecha_nac=models.CharField(max_length=100)
+    Ticker=models.CharField(max_length=50)
+    origen=models.CharField(max_length=50)
+    cotizacion=models.IntegerField(max_length=50)
+    cupon=models.FloatField(max_length=5)
 
